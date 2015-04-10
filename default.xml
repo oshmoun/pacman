@@ -568,8 +568,8 @@
   <project path="packages/apps/Exchange" name="android_packages_apps_Exchange" remote="pac" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pac" />
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="pac" />
-  <project path="pacman" name="pacman" remote="pac" />
-  <project path="vendor/pac" name="android_vendor_pac" remote="pac" >
+  <project path="pacman" name="pacman" revision="pac-5.1-twrp" remote="pac" />
+  <project path="vendor/pac" name="android_vendor_pac" revision="pac-5.1-twrp" remote="pac" >
     <copyfile src="tools/build-pac.sh" dest="build-pac.sh" />
   </project>
 
