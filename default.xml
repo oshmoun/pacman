@@ -4,12 +4,15 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-5.1.1_r1" />
+           revision="refs/tags/android-5.1.1_r2" />
 
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
            review="review.cyanogenmod.org"
            revision="refs/heads/cm-12.1" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
 
   <remote  name="omni"
            fetch="https://github.com/omnirom"
@@ -20,14 +23,12 @@
            fetch="https://github.com/PAC-man"
            review="review.pac-rom.com" />
 
-  <remote  name="ss"
-           fetch="https://github.com/Split-Screen" />
-
   <remote  name="pic"
            fetch="https://github.com/Pinky-Inky-and-Clyde" />
 
-  <remote  name="github"
-           fetch="https://github.com" />
+  <remote  name="ss"
+           fetch="https://github.com/Split-Screen"
+           review="review.pac-rom.com" />
 
   <default revision="refs/heads/pac-5.1"
            remote="github"
@@ -383,6 +384,9 @@
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cm" />
   <project path="external/unrar" name="android_external_unrar" remote="cm" />
   <project path="external/vim" name="android_external_vim" remote="cm" />
+  <project path="external/whispersystems/curve25519" name="android_external_whispersystems_curve25519-java" remote="cm" />
+  <project path="external/whispersystems/libtextsecure" name="android_external_whispersystems_libtextsecure-java" remote="cm" />
+  <project path="external/whispersystems/libaxolotl" name="android_external_whispersystems_libaxolotl-android" remote="cm" />
   <project path="external/whispersystems/TextSecure" name="android_external_whispersystems_TextSecure" remote="cm" />
   <project path="external/whispersystems/WhisperPush" name="android_external_whispersystems_WhisperPush" remote="cm" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="cm" />
@@ -493,6 +497,7 @@
   <project path="packages/apps/Mms" name="android_packages_apps_Mms-caf" remote="cm" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="cm" />
   <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="cm" />
+  <project path="packages/apps/Profiles" name="android_packages_apps_Profiles" remote="cm" />
   <project path="packages/apps/Provision" name="android_packages_apps_Provision" remote="cm" />
   <project path="packages/apps/SmartCardService" name="android_packages_apps_SmartCardService" remote="cm" />
   <project path="packages/apps/SoundRecorder" name="android_packages_apps_SoundRecorder" remote="cm" />
@@ -540,6 +545,7 @@
   <project path="system/security" name="android_system_security" groups="pdk" remote="cm" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cm" />
   <project path="vendor/cm" name="android_vendor_cm" remote="cm" />
+  <project path="vendor/cmsdk" name="cm_platform_sdk" remote="cm" />
 
   <!-- OmniROM -->
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="omni" />
